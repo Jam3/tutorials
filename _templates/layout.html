@@ -1,5 +1,46 @@
 {% extends "!layout.html" %}
 
+
+{% block menu %}
+  {% if release == "master" %}
+    <div class="unstable">
+        You are viewing unstable developer preview docs.
+        <a href="{{ theme_canonical_url }}{{ pagename }}.html">Click here</a>
+        to view docs for latest stable release.
+    </div>
+  {% endif %}
+  {{ super() }}
+{% endblock %}
+
+
+{% block sidebartitle %}
+<div class="versions">
+  <div class="current-version">{{ version }} <span></span></div>
+  <ul class="custom-select">
+    {% for item in static_versions %}
+      <li><a href="{{ item.url }}">{{ item.slug }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
+
+{% block version_list %}
+  {{ super() }}
+  {% if pagename == "versions" %}
+    <ul class="simple">
+      {% for item in static_versions %}
+        <li><a href="{{ item.url }}">{{ item.slug }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endblock %}
+
+{% block before_global_toc_sidebar %}
+  <p class="caption single-item{% if pagename == 'index' %} current{% endif %}">
+    <a class="caption-text reference internal" href="{{ pathto('index') }}">Overview</a>
+  </p>
+{% endblock %}
+
 {% block footer %}
 {{ super() }}
 <script>
@@ -92,10 +133,6 @@ if(window.location.href.indexOf("/beginner/basics/")!= -1)
   src="https://www.facebook.com/tr?id=243028289693773&ev=PageView
   &noscript=1"/>
 </noscript>
-
-<script type="text/javascript">
-  var collapsedSections = ['PyTorch Recipes', 'Learning PyTorch', 'Image and Video', 'Audio', 'Text', 'Reinforcement Learning', 'Deploying PyTorch Models in Production', 'Code Transforms with FX', 'Frontend APIs', 'Extending PyTorch', 'Model Optimization', 'Parallel and Distributed Training', 'Mobile'];
-</script>
 
 <img height="1" width="1" style="border-style:none;" alt="" src="https://www.googleadservices.com/pagead/conversion/795629140/?label=txkmCPmdtosBENSssfsC&amp;guid=ON&amp;script=0"/>
 {% endblock %}
