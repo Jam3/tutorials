@@ -1,0 +1,45 @@
+body>img {
+    display:none;
+}
+
+/*Main Header exceptions*/
+.mainHeader {
+    height: 5rem;
+}
+@media screen and (min-width: 1600px) {
+    .mainHeader {
+        height: 8rem;
+    }
+}
+
+.mainHeader .container {
+    padding: 0;
+    margin-left: 2rem;
+    max-width: 100%;
+}
+@media screen and (min-width: 1600px) {
+    .mainHeader .container {
+        margin: 0 10rem;
+    }
+}
+
+.mainHeader svg {
+    width: 7rem;
+}
+@media screen and (min-width: 1600px) {
+    .mainHeader svg {
+        width: initial;
+    }
+}
+
+.mainHeader .container .content-container .mainNav .navItems .navItemsContainer .mainItem .parentTitle.docs.active,
+.mainHeader .container .content-container .mainNav .navItems .navItemsContainer .mainItem .parentTitle.tutorials.active {
+    color: #de3412;
+}
+
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+/*Main Footer exceptions*/
