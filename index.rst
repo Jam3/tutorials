@@ -4,74 +4,6 @@ Welcome to PyTorch Tutorials
 .. container:: cards
 
   .. container:: title
-   
-   .. raw:: html
-     <p>
-   
-   RELATED TUTORIALS
-
-   .. raw:: html
-     </p>
-  
-  .. container:: description
-
-    Lorem ipsum dolor sit amet, consectetur
-  
-  .. container:: cards-container
-
-    .. container:: card
-
-      .. container:: image
-        
-        .. image:: _static/img/card1.png
-
-      .. container:: featured
-
-        FEATURED
-
-      .. container:: title
-
-        Tutorial
-
-      .. container:: subtitle
-
-        Learn the Basics
-
-      .. container:: description
-
-        A step-by-step guide to building a complete ML workflow with PyTorch.
-
-      .. container:: tags
-
-        tag 1, tag 2, tag 3
-
-    .. container:: card
-      
-      .. container:: image
-        
-        .. image:: _static/img/card2.png
-
-      .. container:: title
-
-        Tutorial
-
-      .. container:: subtitle
-
-        Sequence-to-Sequence Modeling with nn.Transformer and torchtext
-
-      .. container:: description
-
-        A step-by-step guide to building a complete ML workflow with PyTorch.
-
-      .. container:: tags
-
-        tag 1, tag 2, tag 3
-
-
-
-.. container:: cards-container three-columns
-
-  .. container:: title
 
     RELATED TUTORIALS
   
@@ -79,7 +11,7 @@ Welcome to PyTorch Tutorials
 
     Lorem ipsum dolor sit amet, consectetur
   
-  .. container:: cards-container
+  .. container:: cards-container three-columns
 
     .. container:: card
 
@@ -154,6 +86,62 @@ Welcome to PyTorch Tutorials
       .. container:: tags
 
         tag 1, tag 2, tag 3
+
+
+.. container:: cards
+
+  .. container:: cards-container two-columns
+    
+    .. container:: title-container
+
+      .. container:: main-title
+
+        LEARN THE BASICS
+
+      .. container:: main-description
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac velit vel elit sollicitudin mattis nec.
+
+    .. container:: title-container
+
+      .. container:: main-title
+
+        PYTORCH RECIPES
+
+      .. container:: main-description
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac velit vel elit sollicitudin mattis nec. 
+
+  .. container:: cards-container two-columns
+    
+    .. container:: card
+
+      .. container:: image
+
+        .. image:: _static/img/card1.png
+
+      .. container:: subtitle
+
+        Lorem Ipusm esta con les tues esta me
+
+      .. container:: link
+
+        `Get Started with Pytorch <https://pytorch.org>`_
+
+    .. container:: card
+
+      .. container:: image
+
+        .. image:: _static/img/card2.png
+
+      .. container:: subtitle
+
+        Sequence-to-Sequence Modeling with nn.Transformer and torchtext
+
+      .. container:: link
+
+        `View The Full Recipes <https://pytorch.org>`_
+
 
 .. raw:: html
 
