@@ -21,13 +21,7 @@ Tested for Read the Docs theme 0.1.7 */
   box-shadow: 0 0 15px rgba(142, 176, 202, 0.5);
 }
 .sphx-glr-thumbcontainer a.internal {
-  bottom: 0;
   display: block;
-  left: 0;
-  padding: 150px 10px 0;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 /* Next one is to avoid Sphinx traditional theme to cover all the
 thumbnail with its default link Background color */
