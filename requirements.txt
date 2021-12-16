@@ -1,6 +1,6 @@
 # Refer to ./jenkins/build.sh for tutorial build instructions
 
-sphinx==1.8.2
+sphinx==3.5.4
 sphinx-gallery==0.3.1
 docutils==0.16
 sphinx-copybutton
@@ -17,6 +17,7 @@ awscli==1.16.35
 flask
 spacy==2.3.2
 ray[tune]
+sphinx-tabs==3.2.0
 
 # PyTorch Theme
 -e git+https://github.com/pytorch/pytorch_sphinx_theme.git#egg=pytorch_sphinx_theme
