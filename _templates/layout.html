@@ -1,38 +1,10 @@
 {% extends "!layout.html" %}
 
 
-{% block menu %}
-  {% if release == "master" %}
-    <div class="unstable">
-        You are viewing unstable developer preview docs.
-        <a href="{{ theme_canonical_url }}{{ pagename }}.html">Click here</a>
-        to view docs for latest stable release.
-    </div>
-  {% endif %}
-  {{ super() }}
-{% endblock %}
-
-
 {% block sidebartitle %}
 <div class="versions">
-  <div class="current-version">{{ version }} <span></span></div>
-  <ul class="custom-select">
-    {% for item in static_versions %}
-      <li><a href="{{ item.url }}">{{ item.slug }}</a></li>
-    {% endfor %}
-  </ul>
+  <div class="current-version">{{ version }}</div>
 </div>
-{% endblock %}
-
-{% block version_list %}
-  {{ super() }}
-  {% if pagename == "versions" %}
-    <ul class="simple">
-      {% for item in static_versions %}
-        <li><a href="{{ item.url }}">{{ item.slug }}</a></li>
-      {% endfor %}
-    </ul>
-  {% endif %}
 {% endblock %}
 
 {% block before_global_toc_sidebar %}

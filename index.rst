@@ -5,7 +5,7 @@ Welcome to PyTorch Tutorials
 
   .. container:: title
 
-    RELATED TUTORIALS
+    WHAT'S NEW
   
   .. container:: description
 
